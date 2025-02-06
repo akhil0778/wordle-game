@@ -1,0 +1,185 @@
+.App {
+  text-align: center;
+  background-color: #121212;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+body {
+  padding: 0%;
+  margin: 0;
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid grey;
+  display: grid;
+  place-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 45px;
+}
+.game {
+  width: 100vw;
+  height: calc(100vh - 170px);
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  flex-direction: column;
+}
+
+.board {
+  width: 340px;
+  height: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter {
+  border: 1px solid grey;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  font-weight: bolder;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.keyboard {
+  width: 500px;
+  height: 250px;
+  margin-top: 13px;
+}
+
+.line1 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.line2 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+.line3 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+.key {
+  width: 35px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  background-color: grey;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+#big {
+  width: 100px;
+}
+#disabled {
+  background-color: #3a393c;
+}
+.letter {
+  width: 50px;
+  height: 35px;
+  border: 2px solid #d3d6da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.correct {
+  background-color: #6aaa64; /* Green */
+  color: white;
+}
+
+.almost {
+  background-color: #c9b458; /* Yellow */
+  color: white;
+}
+
+.error {
+  background-color: #787c7e; /* Grey */
+  color: white;
+}
+
+@media screen and (max-width:768px){
+  .key {
+    width: 25px;
+    height: 30px;
+    font-size: 10px;
+}
+#big {
+  width: 50px;
+}
+.keyboard {
+  width: 370px;
+  height: 250px;
+  margin-top: 30px;
+}
+.letter {
+  width: 50px;
+  height: 35px;
+  font-size: 16px;
+}
+.game {
+  padding-top: 25px;
+}
+}
+.gameOver {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.gameOver h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+h3 {
+  font-size: 15px;
+}
+h1.correct-word {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
