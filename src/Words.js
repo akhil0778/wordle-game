@@ -7,7 +7,7 @@ export const boardDefault = [
   ["", "", "", "", ""],
 ];
 
-const staticWords = ["apple", "grape", "mango", "peach", "berry"]; // Static words
+const staticWords = ["Brave", "Dream", "Peace", "Smile", "Trust"]; // Static words
 
 export const generateWordSet = () => {
   let wordSet = new Set(staticWords); // Use only static words
