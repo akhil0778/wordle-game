@@ -25,7 +25,6 @@ const App = () => {
 
   const fetchWords = async () => {
     const { wordSet, todaysWord } = await generateWordSet();
-    console.log("Fetched words:", wordSet, "Today's word:", todaysWord);
     setWordSet(new Set(wordSet));
     setCorrectWord(todaysWord.trim().toLowerCase());
   };
@@ -40,7 +39,6 @@ const App = () => {
     if (currAttempt.letter < 5) return;
 
     let currWord = board[currAttempt.attempt].join("").toLowerCase();
-    console.log("Checking word:", currWord);
 
     let newDisabledLetters = [...disabledLetters];
     let letterStatus = Array(5).fill("error");
