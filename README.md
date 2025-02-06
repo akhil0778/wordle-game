@@ -16,7 +16,7 @@ Installation & Setup
 
 Clone the repository
 
-git clone https://github.com/YOUR_USERNAME/wordle-clone.git
+https://github.com/akhil0778/wordle-game.git
 cd wordle-clone
 
 Install dependencies
